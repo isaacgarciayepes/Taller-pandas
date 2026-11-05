@@ -88,8 +88,44 @@ Para entregar, agrega al final de este `README.md` una sección con tu nombre y 
 
 ## Preguntas de negocio
 
-1. ¿Qué categoría genera más ingresos?
-2. ¿Qué canal vende más?
-3. ¿Los clientes VIP compran más que los Regulares?
-4. ¿Qué método de pago es el más usado?
-5. ¿Cuáles son los cinco clientes con más compras?
+## Respuestas al desafío final
+
+## 1. ¿Qué categoría genera más ingresos?
+
+La categoría que genera más ingresos es Tecnología, con un total de 14.290.000 COP.
+
+Se agruparon las ventas por categoría utilizando groupby() y se sumó la columna total. Después, se ordenaron los resultados de mayor a menor para identificar la categoría con mayores ingresos.
+
+## 2. ¿Qué canal vende más?
+
+El canal Online genera más ingresos, con 14.669.000 COP, frente a los $4.507.000 COP del canal Tienda. Además, Online registra más ventas: 35 frente a 33.
+
+Se agruparon las ventas por canal y se calcularon la cantidad de ventas y la suma de los ingresos para cada uno.
+
+## 3. ¿Los clientes VIP compran más que los Regulares?
+
+Sí. Los clientes VIP tienen un promedio de 1,21 compras por cliente, mientras que los clientes Regulares tienen un promedio de 1,08 compras por cliente. Además, el gasto promedio por cliente VIP es de 336.083 COP, frente a $308.611 COP de los clientes Regulares.
+
+Se agruparon los clientes por segmento y se calcularon las compras y el gasto total. Luego, se dividieron esos resultados entre la cantidad de clientes únicos de cada segmento para obtener los promedios.
+
+## 4. ¿Qué método de pago es el más usado?
+
+El método de pago más utilizado es Efectivo, con 30 ventas. Le siguen Tarjeta, con 25 ventas, y Transferencia, con 13 ventas.
+
+Criterio utilizado: Se utilizó value_counts() para contar la frecuencia de cada método de pago y determinar cuál es el más utilizado.
+
+## 5. ¿Cuáles son los cinco clientes con más compras?
+
+Los cinco clientes con mayor número de compras son:
+
+Nicolás Cardona: 2 compras, por un total de 2.515.000 COP.
+
+Matías Rodríguez: 2 compras, por un total de 1.278.000 COP.
+
+Mía Quintero: 2 compras, por un total de 1.090.000 COP.
+
+Luna Montoya: 2 compras, por un total de 1.007.000 COP.
+
+Luis Pérez: 2 compras, por un total de 730.000 COP.
+
+Se agruparon los registros por id_cliente y nombre_cliente. Después, se contó el número de compras y se sumó el gasto total de cada cliente. Finalmente, se ordenaron los resultados por cantidad de compras y, en caso de empate, por gasto total de mayor a menor.
